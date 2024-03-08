@@ -8,4 +8,5 @@ def webhook():
         print("Data received from Webhook is: ", request.json)
         return "Webhook received!"
 
-app.run(host='0.0.0.0', port=8000)
+if __name__ == '__main__':
+    app.run()
